@@ -13,7 +13,7 @@ export default (props: { data: Plotly.Data[] }) => {
   const classes = useStyles();
   const { data } = props;
   const tempPresent = data.filter(node => node.yaxis === 'y').length > 1;
-
+  // checking length
   if (data.length > 1) {
     return (
       <Plot
